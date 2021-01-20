@@ -100,6 +100,7 @@ void interface_init(void)
 	  /* Configure LED3 and LED4 */
 	  BSP_LED_Init(LED3);
 	  BSP_LED_Init(LED4);
+	  BSP_PB_Init(BUTTON_KEY, BUTTON_MODE_GPIO);
 
 	  /* Configure the system clock to 180 MHz */
 	  SystemClock_Config();
